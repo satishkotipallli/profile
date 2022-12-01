@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="email" name="" placeholder="enter email" id="s1">
+	<p id="demo"></p>
+	<button onclick="check()">check email</button>
+   <script type="text/javascript">                                       
+   	// let a=["Sampath","naveen","satish"]
+   	// let branches=[{'name':'sampath','roll':123,'college':'aditya'},
+    //             {'name':'naveen','roll':124,'college':'aditya'},
+    //             {'name':'vp','roll':125,'college':'aditya'}]
+   	// let b=branches.some(function (ele,i,arr) {
+   	// 	return ele.name=="sampath";
+   	// })
+   	// console.log(b);
+   	// let age=[20,30,22,57,19,55,33,44]
+   	// let vote=age.every(function (v) {
+    //        return v>18;
+   	// 		})
+   	// console.log(vote)
+   	 // let branches=[{'name':'sampath','roll':123,'college':'aditya'},
+     //        {'name':'naveen','roll':124,'college':'aditya'},
+     //        {'name':'vp','roll':125,'college':'aditya'}]
+     //        let check=branches.every(function (ele,i,arr) {
+     //        	return ele.roll>100          
+     //        })
+     //        console.log(check)
+     function check() {
+     	let a=["satishkotipalli38@gmail.com","satishkotipalli28@gmail.com","akulatejasampathkumar@gmail.com","naveengundoju96@gmail.com"]
+     let email=a.some(function (name,i,arr){
+    let s=document.getElementById('s1').value
+     return name==s
+     })
+     if(email==true){
+        	
+    	document.getElementById('demo').innerHTML="Email already exist"
+    	document.getElementById('demo').style.color="red"
+    }
+    else{
+     document.getElementById('demo').innerHTML="proceed"
+     document.getElementById('demo').style.color="green"	
+    }
+     }
+   </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<table id="s2" border="1px solidblack">
+		<tr>
+			<td>Name</td>
+			<td> Roll num</td>
+			<td>Test1</td>
+			<td>Test2</td>
+			<td>Test3</td>
+		</tr>
+	</table>
+<script type="text/javascript">
+	 let marks =[{'name':'sampath',
+	                ' roll num':123,
+	                'test1':65,
+	                'test2':70,
+	                'test3':80 },
+	                {'name':'satish',
+	                ' roll num':124,
+	                'test1':90,
+	                'test2':80,
+	                'test3':90 },
+	                {'name':'veeraprasad',
+	                ' roll num':125,
+	                'test1':70,
+	                'test2':80,
+	                'test3':80 },
+	                {'name':'naveen',
+	                ' roll num':127,
+	                'test1':80,
+	                'test2':80,
+	                'test3':70 },
+	                {'name':'sampath.k',
+	                ' roll num':126,
+	                'test1':90,
+	                'test2':90,
+	                'test3':80 }]
+            
+                     marks.forEach(function (i) {
+                     	 let a=marks.every(function () {
+                     	 	if(i['test1']>60 && i['test2']>60  && i['test3']>60){
+                        document.getElementById('s2').innerHTML+="<tr><td>"+i['name']+"</td><td>"+i[' roll num']+"</td><td>"+i['test1']+"</td><td>"+i['test2']+"</td><td>"+i['test3']+"</td></tr>"
+                    }
+                     })                                    
+               
+                })
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+</script>
+</body>
+</html>
